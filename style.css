@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*,body{
+    margin: 0;
+    padding: 0;
+}
+body{
+    cursor: url(./cursor/normal.svg),auto;
+}
+#prevContainer{
+    width: 100vw;
+    height: 100vh;
+}
+
+#blured{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #04123F;
+}
+#container{
+    height: 100%;
+    width: 100%;
+    /* background-color: cornsilk; */
+    position: relative;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 80%;
+    margin: 30px auto 0px auto ;
+}
+#listes{
+    height: 55px;
+    width: 33.3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: violet; */
+}
+#listes li{
+    box-sizing: border-box;
+    padding: 20px 10px 20px 10px;
+    display: inline;
+    font-size: 12px;
+    font-weight: thin;
+    font-family: Arial;
+    color: white;
+    transition: .2s ease-out;
+    cursor: url(./cursor/pointer.svg),auto;
+}
+#listes li:hover{
+    font-size: larger;
+}
+#listes li:not(:last-child){
+    margin: 0 20px 0 0 ;
+}
+#logoImg{
+    height: 24px;
+    width: 24px;
+}
+#logo{
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    font-size: 18px;
+    font-family: 'Righteous', cursive;
+    color: white;
+    font-weight: 200;
+    justify-self: flex-start;
+    padding-left: 10px;
+}
+#logo :first-child{
+    margin-right: 6px;
+}
+#buttons{
+    width: 33.3%;
+    height: 55px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px 0 0;
+}
+ 
+#buttons img{
+    width: 10px;
+    height: 10px;
+    cursor: url(./cursor/pointer.svg),auto;
+}
+#social{
+    margin: 0 30px 0 0;
+}
+#social *:not(:last-child){
+    margin: 0 8px 0 0 
+}
+#start{
+    width: 27%;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.473);
+    border: none;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.295);
+    font-size: 10px;
+    font-weight: bold;
+}
