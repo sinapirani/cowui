@@ -32,8 +32,8 @@ body{
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    height: 60px;
-    width: 80%;
+    height: 80px;
+    width: 75%;
     margin: 30px auto 0px auto ;
 }
 #listes{
@@ -48,7 +48,7 @@ body{
     box-sizing: border-box;
     padding: 20px 10px 20px 10px;
     display: inline;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: thin;
     font-family: Arial;
     color: white;
@@ -117,4 +117,28 @@ body{
     font-size: 10px;
     font-weight: bold;
     cursor: url(./cursor/pointer.svg),auto;
+}
+
+#bull{
+    position: absolute;
+    width: 800px;
+    height: 720px;
+    left: 100%;
+    top: 100%;
+    transform: translate(-100%,-100%);
+    z-index: 4;
+}
+#topOne{
+    position: absolute;
+    left: 100%;
+    bottom: 350px;
+    transform: translateX(-100%);
+    z-index: 3;
+
+}
+#topTwo{
+    position: absolute;
+    left: 300px;
+    bottom: 250px;
+    z-index: 3;
 }

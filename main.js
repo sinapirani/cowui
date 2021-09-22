@@ -1,6 +1,6 @@
-let body = document.body
+let body = document
 let off = document.getElementById('off')
 
 body.addEventListener('mousemove',(e)=>{
-    console.log(e.offsetX)
+    off.textContent = e.screenX
 })
