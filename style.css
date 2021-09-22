@@ -1,5 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@font-face {
+    font-family: prag;
+    src: url(./Pragmatica-ExtraBold_36320.ttf);
+}
 
 *,body{
     margin: 0;
@@ -9,15 +13,21 @@ body{
     cursor: url(./cursor/normal.svg),auto;
 }
 #prevContainer{
+    position: relative;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
+    background-color: #04123f;
 }
 
 #blured{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #04123F;
+    background-color: #04123f41;
+    backdrop-filter: blur(1px);
+    overflow: hidden;
+    z-index: 0;
 }
 #container{
     height: 100%;
@@ -34,7 +44,7 @@ body{
     transform: translateX(-50%);
     height: 80px;
     width: 75%;
-    margin: 30px auto 0px auto ;
+    margin: 10px auto 0px auto ;
 }
 #listes{
     height: 55px;
@@ -109,10 +119,10 @@ body{
 #start{
     width: 27%;
     height: 30px;
-    background-color: rgba(255, 255, 255, 0.473);
+    background-color: rgba(255, 255, 255, 0.26);
     border: none;
     border-radius: 7px;
-    color: white;
+    color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.295);
     font-size: 10px;
     font-weight: bold;
@@ -126,7 +136,7 @@ body{
     left: 100%;
     top: 100%;
     transform: translate(-100%,-100%);
-    z-index: 4;
+    z-index: 6;
 }
 #topOne{
     position: absolute;
@@ -139,6 +149,57 @@ body{
 #topTwo{
     position: absolute;
     left: 300px;
-    bottom: 250px;
-    z-index: 3;
+    bottom: 270px;
+    z-index: 2;
+}
+#plus1{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 290px;
+    top: 130px;
+    opacity: 90%;
+    filter: blur(.5px);
+}
+#plus2{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 450px;
+    top: 110px;
+    opacity: 90%;
+    filter: blur(5.5px);
+}
+#circle{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #43f0ae33;
+    border-radius: 50%;
+    filter: blur(150px);
+    left: 550px;
+    z-index: 4; 
+}
+#circle2{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #43f0ae33;
+    border-radius: 50%;
+    filter: blur(150px);
+    left: 400px;
+    z-index: 2; 
+}
+#title{
+    position: absolute;
+    left: 160px;
+    top: 180px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 50px;
+}
+#topThree{
+    position: absolute;
+    top:100%;
+    transform: translateY(-100%);
 }
