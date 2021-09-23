@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
 @font-face {
     font-family: prag;
     src: url(./Pragmatica-ExtraBold_36320.ttf);
 }
+
 
 *,body{
     margin: 0;
@@ -34,6 +44,15 @@ body{
     width: 100%;
     /* background-color: cornsilk; */
     position: relative;
+    z-index: 7;
+}
+@keyframes menu{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+    }
 }
 #menu{
     display: flex;
@@ -45,6 +64,7 @@ body{
     height: 80px;
     width: 75%;
     margin: 10px auto 0px auto ;
+    animation: menu 5s;
 }
 #listes{
     height: 55px;
@@ -117,7 +137,7 @@ body{
     margin: 0 2px 0 0 
 }
 #start{
-    width: 27%;
+    width: 33%;
     height: 30px;
     background-color: rgba(255, 255, 255, 0.26);
     border: none;
@@ -128,7 +148,16 @@ body{
     font-weight: bold;
     cursor: url(./cursor/pointer.svg),auto;
 }
-
+@keyframes bull{
+    0%{
+        top: 150% ;
+        left: 150%;
+    }
+    100%{
+        top: 100%;
+        left: 100%;
+    }
+}
 #bull{
     position: absolute;
     width: 800px;
@@ -137,6 +166,7 @@ body{
     top: 100%;
     transform: translate(-100%,-100%);
     z-index: 6;
+    animation: bull 2s;
 }
 #topOne{
     position: absolute;
@@ -144,6 +174,7 @@ body{
     bottom: 350px;
     transform: translateX(-100%);
     z-index: 3;
+    animation: opa 5s;
 
 }
 #topTwo{
@@ -160,6 +191,8 @@ body{
     top: 130px;
     opacity: 90%;
     filter: blur(.5px);
+    animation: rotate 7s linear infinite;
+    animation: opa 5s;
 }
 #plus2{
     position: absolute;
@@ -169,6 +202,7 @@ body{
     top: 110px;
     opacity: 90%;
     filter: blur(5.5px);
+    animation: opa 5s;
 }
 #circle{
     position: absolute;
@@ -199,16 +233,45 @@ body{
     font-size: 50px;
     z-index: 2;
 }
+#title2{
+    position: absolute;
+    left: 160px;
+    top: 235px;
+    color: white;
+    font-family: 'Raleway';
+    font-size: 50px;
+    z-index: 2;
+}
+@keyframes titleShadow{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
 #titleShadow{
     position: absolute;
-    left: 180px;
-    top: 255px;
+    left: 170px;
+    top: 250px;
     color: transparent;
     -webkit-text-stroke: 1px #43F0AF ;
     font-family: 'Raleway';
     font-size: 50px;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.3;
+    animation: titleShadow 5s;
+}
+@keyframes opa{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 #paragraph{
     position: absolute;
@@ -217,15 +280,32 @@ body{
     top: 340px;
     left: 165px;
     font-size: 12px;
+    animation: opa 3.2s;
 }
 #underButton{
     position: absolute;
     left: 160px;
     top: 410px;
+    animation: opa 3.9s;
 }
 #startTwo{
     height: 27px;
     width: 90px;
+    background-color: #43F0AF;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 20px #43f0ae7e;
+    font-size: 11px;
+    margin-right: 8px;
+}
+#learn{
+    height: 27px;
+    width: 90px;
+    background-color: rgba(255, 255, 255, 0.26);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 11px;
 }
 #topThree{
     position: absolute;
@@ -233,6 +313,7 @@ body{
     right: 490px;
     transform: translateY(-100%);
     z-index: 1;
+    animation: opa 5s;
 }
 #topFour{
     position: absolute;
@@ -240,4 +321,5 @@ body{
     right: 440px;
     transform: translateY(-100%);
     z-index: 0;
+    animation: opa 5s;
 }
