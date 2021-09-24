@@ -263,7 +263,7 @@ body{
     font-size: 50px;
     z-index: 1;
     opacity: 0.3;
-    animation: titleShadow 3s;
+    animation: titleShadow 2s;
 }
 @keyframes opa{
     0%{
@@ -284,7 +284,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     top: 340px;
     left: 165px;
-    font-size: 12px;
+    font-size: 14px;
     animation: opa 3.2s;
 }
 #underButton{
@@ -332,4 +332,18 @@ body{
     transform: translateY(-100%);
     z-index: 0;
     animation: opa 5s;
+}
+#testRoom{
+    height: 150px;
+    width: 150px;
+    background-color: wheat;
+}
+#donbal{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border: 3px solid #43F0AF;
+    border-radius: 50%;
+    z-index: 10;
+    /* transform: translateX(-100%,-50%) */
 }
