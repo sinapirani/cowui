@@ -10,6 +10,7 @@ let test2 = document.getElementById('test2')
 let speed = document.getElementById('speed')
 let donbal = document.getElementById('donbal')
 let current = document.getElementById('current')
+let textes = document.getElementById('textes')
 
 
 
@@ -24,17 +25,13 @@ let titleInt = setInterval(() => {
 },70);
 
 
-let lastmousex =1
-let lastmousey =  1
-let mousetravel = 0
-
 body.addEventListener('mousemove',(e)=>{
-
-    test1.textContent = `X: ${e.pageX}`
-    test2.textContent = `Y: ${e.pageY}`
     donbal.style.left = e.pageX - 11.5 + 'px'
     donbal.style.top = e.pageY + -13 + 'px'
     })
 
-let currentx = donbal.style.left
-alert(donbal.style.left)
+body.addEventListener('wheel',()=>{
+    textes.style.animation = 'routate 2s'
+})
+// let currentx = donbal.style.left
+// alert(donbal.style.left)
