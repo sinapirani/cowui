@@ -2,7 +2,7 @@ let body = document
 let off = document.getElementById('off')
 let title = document.getElementById('title')
 let title2 = document.getElementById('title2')
-let titleText = ['D', 'o', 'n', "'", 't', ' ', 'B', 'e', ' ', 'L', 'a', 't', 'e', 'I', 'n', 'v', 'e', 's', 't', 'i', 'n', 'g', ' ', 'I', 's', ' ', 'G', 'r', 'e', 'a', 't', 'e']
+let titleText = ['D', 'o', 'n', "'", 't', ' ', 'B', 'e', ' ', 'L', 'a', 't', 'e', 'I', 'n', 'v', 'e', 's', 't', 'i', 'n', 'g', ' ', 'I', 's', ' ', 'G', 'r', 'e', 'a', 't']
 let text = ''
 let counter = -1
 let test1 = document.getElementById('test1')
@@ -11,8 +11,10 @@ let speed = document.getElementById('speed')
 let donbal = document.getElementById('donbal')
 let current = document.getElementById('current')
 let textes = document.getElementById('textes')
-
-
+let startTwo = document.getElementById('startTwo')
+function alerttt(){
+    alert('sd')
+}
 
 let titleInt = setInterval(() => {
     counter += 1
@@ -30,8 +32,3 @@ body.addEventListener('mousemove',(e)=>{
     donbal.style.top = e.pageY + -13 + 'px'
     })
 
-body.addEventListener('wheel',()=>{
-    textes.style.animation = 'routate 2s'
-})
-// let currentx = donbal.style.left
-// alert(donbal.style.left)
